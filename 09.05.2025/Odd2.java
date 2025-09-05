@@ -17,7 +17,6 @@ class Odd2 {
                 System.out.println(i);
             }
             else {}
-        }
-        
+        }   
     }
 }
