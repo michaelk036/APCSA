@@ -12,7 +12,7 @@ class Factorial {
         System.out.println("Enter a number");
         int input = sc.nextInt();
 
-        int output = 1;
+        int output = 1;x
 
         for(int i = 1; i <= input; i++) {
             output *= i;

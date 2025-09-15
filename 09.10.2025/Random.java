@@ -20,7 +20,7 @@ class Random {
         System.out.println("Enter the upper Bound");
         double upperBound = sc.nextInt();
         System.out.println("Enter the lower Bound");
-        double lowerBound = sc.nextInt();
+        double lowerBound = s.nextInt();
         
         double output = 1; 
 
