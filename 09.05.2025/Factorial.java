@@ -12,10 +12,11 @@ class Factorial {
         System.out.println("Enter a number");
         int input = sc.nextInt();
 
-        int output = 1;x
+        int output = 1;
 
         for(int i = 1; i <= input; i++) {
             output *= i;
+
         }
 
     System.out.println("The factorial of "+input+ " is " +output);
