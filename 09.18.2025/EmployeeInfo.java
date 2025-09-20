@@ -16,13 +16,7 @@ keep variables as private
  */
 import java.util.Scanner;
 
-public class Employee {
-    public static void main(String[] args) {
-        Employee emp = new Employee();
-        emp.getEmp();
-        emp.showGrade();
-        emp.showEmp();
-    }
+class Employee {
     
     private int emp_id;
     private String emp_name;
@@ -30,7 +24,7 @@ public class Employee {
     private int emp_salary;
     private String grade;
 
-    private void getEmp() {
+    void getEmp() {
         Scanner sc = new Scanner(System.in);
 
         System.out.println("Enter your Name");
@@ -42,7 +36,7 @@ public class Employee {
         System.out.println("Enter your salary (per year)");
         emp_salary = sc.nextInt();
     }
-    private void showGrade() {
+    void showGrade() {
         if (emp_salary <= 10000) {
             System.out.println("You are grade D");
             grade = "D";
@@ -61,8 +55,17 @@ public class Employee {
         }
     }
 
-    private void showEmp() {
+    void showEmp() {
         System.out.println("Employee " +emp_id+ ", " +emp_name+ ", is a/an " +emp_designation+ ".");
         System.out.println("They earn $"+emp_salary+", and are grade "+grade);
+    }
+}
+
+class EmployeeInfo {
+    public static void main(String[] args) {
+        Employee emp = new Employee();
+        emp.getEmp();
+        emp.showGrade();
+        emp.showEmp();
     }
 }
