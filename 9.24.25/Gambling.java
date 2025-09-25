@@ -41,7 +41,7 @@ class DiceGame {
 
     void playGame() {
         for (int i = 1; i <= numberofRolls; i++) {
-            int roll = (int) (Math.random()*6+1); //Math.random*(max - min)+min
+            int roll = (int)(Math.random()*6+1); //Math.random*(max - min)+min
             System.out.println(roll);
             
             totalScore += roll;
