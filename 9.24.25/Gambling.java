@@ -19,7 +19,7 @@ class Gambling {
         DiceGame g = new DiceGame();
         g.playGame();
 
-        DiceGame g1 = new DiceGame("Michael",100);
+        DiceGame g1 = new DiceGame("Michael",5);
         g1.playGame();
     }
 }
