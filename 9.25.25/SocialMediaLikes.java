@@ -17,7 +17,7 @@ class SocialMediaLikes {
 }
 
 class SocialMedia {
-    void LikePost() {
+    void LikePost() { //fix
         String userName = "Michael";
         int currentLikes =  3200;
 

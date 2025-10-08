@@ -23,6 +23,8 @@ class GameChar {
         GameCharacter g1 = new GameCharacter("Michael",250);
         g1.takeDamage();
         g1.printStatus();
+
+
     }
 }
 
@@ -40,8 +42,9 @@ class GameCharacter {
         health = playerHealth;
     }
 
-    void takeDamage() {
-        health -= 150;
+    void takeDamage() {//call with val
+        int damage = 0;
+        health -= damage;
 
         if (health <= 0) {
             health = 0;

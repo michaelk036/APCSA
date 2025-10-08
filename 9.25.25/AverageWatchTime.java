@@ -17,7 +17,7 @@ class AverageWatchTime {
 
     static void averageWatchTime() {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter the 1st watchtime");
+        System.out.println("Enter the 1st watchtime"); //fix pass parameters not scanner
         int watchtime1 = sc.nextInt();
         System.out.println("Enter the 2nd watchtime");
         int watchtime2 = sc.nextInt();

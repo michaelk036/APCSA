@@ -28,7 +28,7 @@ Methods:
     String grade;
 
     void getStudent() {
-        Scanner sc = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in); //put in the class as a practice
 
         System.out.println("Enter your name");
         student_name = sc.nextLine();

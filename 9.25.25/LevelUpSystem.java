@@ -15,7 +15,7 @@ class LevelUpSystem {
         l.check();
     }
 }
-class LevelUp {
+class LevelUp { 
     int currentXP = 100;
     int bonusXP = 10;
 

@@ -46,7 +46,7 @@ class BankAccount {
         balance = money;
     }
 
-    void deposit() {
+    void deposit() { //parameter fix
         System.out.println("Hello " +accountHolder+ ", how much would you like to deposit?");
         double deposit = sc.nextDouble();
 

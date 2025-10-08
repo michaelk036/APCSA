@@ -1,0 +1,7 @@
+{
+    "java.project.sourcePaths": [
+        "10.03.25",
+        "10.06.25"
+    ],
+    "java.debug.settings.onBuildFailureProceed": true
+}

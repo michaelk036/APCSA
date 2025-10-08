@@ -17,7 +17,8 @@ keep variables as private
 import java.util.Scanner;
 
 class Employee {
-    
+    Scanner sc = new Scanner(System.in);
+
     private int emp_id;
     private String emp_name;
     private String emp_designation;
@@ -25,8 +26,6 @@ class Employee {
     private String grade;
 
     void getEmp() {
-        Scanner sc = new Scanner(System.in);
-
         System.out.println("Enter your Name");
         emp_name = sc.nextLine();
         System.out.println("Enter your designation");
