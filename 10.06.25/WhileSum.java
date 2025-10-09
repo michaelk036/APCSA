@@ -4,12 +4,12 @@ import java.util.Scanner;
 
 class WhileSum {
     public static void main(String[] args) {
-        Add a = new Add();
+        Addition a = new Addition();
         a.add();       
     }
 }
 
-class Add {
+class Addition {
     Scanner sc = new Scanner(System.in);
     
     void add() {
