@@ -1,22 +1,14 @@
 //Display the individual digits of a user entered number e.g. 1681 should be displayed as 1  6  8  1
-import java.util.Scanner;
-
 class Individual {
     public static void main(String[] args) {
         IndividualDigits d = new IndividualDigits();
-        d.individualize();
+        d.individualize(1681);
     }
 }
 class IndividualDigits {
-    Scanner sc = new Scanner(System.in);
-
-    int number;
     int reverse = 0;
 
-    void individualize() {
-        System.out.println("Enter a number");
-        number = sc.nextInt();
-
+    int individualize(int number) {
         while (number > 0) {
             int temp = number%10;
             reverse = (reverse * 10) + temp;
@@ -28,5 +20,6 @@ class IndividualDigits {
             System.out.print(" " +temp+ " ");
             reverse = reverse/10;
         }
+        return number;
     }
 }

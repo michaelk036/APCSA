@@ -1,7 +1,11 @@
 {
     "java.project.sourcePaths": [
+        "9.05.25",
+        "10.21.25",
+        "10.17.25",
+        "10.06.25",
         "10.03.25",
-        "10.06.25"
+        "10.23.25"
     ],
     "java.debug.settings.onBuildFailureProceed": true
 }

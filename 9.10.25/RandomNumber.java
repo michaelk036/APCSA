@@ -6,9 +6,7 @@ Your function should be able to display 20 random numbers between the numbers sp
  */
 import java.util.Scanner;
 
- class RandomNumber {
-    Scanner sc = new Scanner(System.in); 
-
+class RandomNumber {
     public static void main(String[] args) {
         RandomNumber r = new RandomNumber();
         int upperBound = r.upperBound();
@@ -18,7 +16,10 @@ import java.util.Scanner;
             int output = (int)(Math.random()*(upperBound - lowerBound + 1)) + lowerBound;
             System.out.println(output);
         }
-    }
+    }   
+}
+class Generator {
+    Scanner sc = new Scanner(System.in); 
 
     public int upperBound() {
         System.out.println("Enter the upper Bound");
@@ -31,4 +32,4 @@ import java.util.Scanner;
         int lowerBound = sc.nextInt();
         return lowerBound;
     }
-}  
+}

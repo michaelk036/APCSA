@@ -1,27 +1,21 @@
 //Display the sum of the cube of the individual digits of a number
-import java.util.Scanner;
-
 class WhileCube {
     public static void main(String[] args) {
         Add a = new Add();
-        a.add();       
+        a.add(6);       
     }
 }
 
 class Add {
-    Scanner sc = new Scanner(System.in);
     int sum = 0;
-    int number;
     
-    void add() {
-        System.out.println("Enter a number");
-        number = sc.nextInt();
-
+    int add(int number) {
         while (number > 0) {
             int temp = number%10;
             sum += (int) Math.pow(temp,3);
             number = number/10;
         }
-    System.out.println("The sum of the digits of your number is " +sum);
+        System.out.println("The sum of the cube of individual digits of your number is " +sum);
+        return number;
     }
 }
