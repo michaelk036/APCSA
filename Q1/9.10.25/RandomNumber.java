@@ -8,7 +8,7 @@ import java.util.Scanner;
 
 class RandomNumber {
     public static void main(String[] args) {
-        RandomNumber r = new RandomNumber();
+        Generator r = new Generator();
         int upperBound = r.upperBound();
         int lowerBound = r.lowerBound();
 
