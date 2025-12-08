@@ -1,0 +1,42 @@
+a
+
+public boolean isOdd() {
+    if (value%2 != 0) {
+        return true;
+    }
+    else {
+        return false;
+    }
+}
+
+b
+
+public boolean isPalindrome() {
+    int ones = value%10;
+    value = value/10;
+    int tens = value%10;
+    value = value/10;
+    int hund = value%10;
+    value = value/10;
+    int thou = value%10;
+
+    if (ones == thou) {
+        if (tens == hund) {
+            return true;
+        }
+    }   
+    else {
+        return false;
+    }
+}
+
+c
+
+public boolean isPerfectSquare() {
+    int square = (int) Math.sqrt(value);
+
+    if (square*square == value) {
+        return true;
+    }
+    return false;
+}
