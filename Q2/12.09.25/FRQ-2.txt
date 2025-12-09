@@ -1,0 +1,19 @@
+public static int numberOfLeapYears (int year1, int year2) {
+    int yearOne = year1;
+    int yearTwo = year2; 
+    int counter = 0;
+
+    for (int i = yearOne; i < yearTwo; i++) {
+        if (isLeapYear(year)) {
+            counter++;
+        }
+    }
+}
+
+public static int numberOfLeapYears(int year1, int year2) {
+    fi
+}
+
+
+
+
