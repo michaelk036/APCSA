@@ -1,3 +1,5 @@
+a
+
 public static int numberOfLeapYears (int year1, int year2) {
     int yearOne = year1;
     int yearTwo = year2; 
@@ -10,10 +12,17 @@ public static int numberOfLeapYears (int year1, int year2) {
     }
 }
 
-public static int numberOfLeapYears(int year1, int year2) {
-    fi
+
+b
+
+public static int dayOfWeek(int month, int day, int year) {
+    int firstDay = firstDayofYear(year);  
+    int day = dayOfYear(month, day, year);
+
+    int output = (firstDay + day)%7;
+    return output;
+
+    //firstDay = 2, day = 61, 63%7 = 0 so it's a sunday etc.
 }
-
-
 
 
