@@ -1,16 +1,16 @@
 a
 
 public boolean simulate() {
-    int pos;
+    int pos = 0;
 
     for (int i = 0; i < maxHops; i++) {
         pos += hopDistance();
 
-        if (pos > goalDistance) {
+        if (pos >= goalDistance) {
             return true;
         }
         else if (pos < 0) {
-            return false;
+            return false; 
         }
     }
     return false;
@@ -18,13 +18,24 @@ public boolean simulate() {
 
 b
 
-public double runSimulation (int num) {
+public double runSimulations (int num) {
     int success = 0;
 
-    if (simulate()) {
-        success++;
+    for (int i = 0; i < num; i++) {
+        if (simulate()) {
+            success++;
+        }
     }
 
     double output = (double) success/num;
     return output;
 }
+
+notes
+
+- return serves as a break
+- runSimulations not runSimulation
+- pay attention to <= vs <
+- define before +=
+
+for (int i = 0; i < num; i++) could also be (int i = 1; i <= num; i++) - doesn't matter

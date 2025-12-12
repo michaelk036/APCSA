@@ -5,11 +5,12 @@ public static int numberOfLeapYears (int year1, int year2) {
     int yearTwo = year2; 
     int counter = 0;
 
-    for (int i = yearOne; i < yearTwo; i++) {
-        if (isLeapYear(year)) {
+    for (int i = yearOne; i <= yearTwo; i++) { //make sure upperbound_lowerbound is correct
+        if (isLeapYear(i)) {
             counter++;
         }
     }
+    return counter;
 }
 
 
@@ -19,10 +20,14 @@ public static int dayOfWeek(int month, int day, int year) {
     int firstDay = firstDayofYear(year);  
     int day = dayOfYear(month, day, year);
 
-    int output = (firstDay + day)%7;
+    int output = ((firstDay + day)-1)%7;
     return output;
-
-    //firstDay = 2, day = 61, 63%7 = 0 so it's a sunday etc.
 }
+
+notes
+
+- don't do yearOne = year1, you don't need to
+- isLeapYear(i) not isLeapYear(year)
+- -1 because a month starts at 1 not at 0
 
 

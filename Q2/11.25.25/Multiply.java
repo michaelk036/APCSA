@@ -37,5 +37,9 @@ class Multiply {
             }
         }
         
-    }
+    }      
 }
+
+/*
+"That's crazy how guys don't do makeup, you just wake up and have to go... like what if you're chopped"
+*/
