@@ -1,9 +1,8 @@
 a
 
 public static int numSymbols (String s) {
-    Symbols = 0; 
-    Symbols -= s.length() - (numDigits(s) - numLetters(s));
-    returns Symbols;
+    int symbols = s.length() - ((numDigits(s) + numLetters(s)));
+    return symbols;
 }
 
 b
@@ -12,10 +11,17 @@ public static String passwordStrength(String p) {
     if (p.length() >= 8) {
         if (numDigits(p) >= 1 && numLetters(p) >= 1 && numSymbols(p) >= 1) {
                     String output = "strong";
-                    return output
+                    return output;
         }
     }
-    if ((p.length() >= 5 && p.length < 8) || p.length() >= 8) {
 
+    else if ((p.length() >= 5 && p.length() < 8 && numSymbols(p) >= 1) || p.length() >= 8 && (numDigits(p) == 0 || numLetters(p) == 0 || numSymbols(p) == 0)) {
+        String output = "medium";
+        return output;
+    }
+
+    else {
+        String output = "weak";
+        return output;
     }
 }
