@@ -9,17 +9,20 @@ b
 
 public static String passwordStrength(String p) {
     if (p.length() >= 8 && numDigits(p) >= 1 && numLetters(p) >= 1 && numSymbols(p) >= 1) {
-                    String output = "strong";
-                    return output;
+        String output = "strong";
+        return output;
+        //return "strong";
     }
 
     else if ((p.length() >= 5 && p.length() < 8 && numSymbols(p) >= 1) || p.length() >= 8 && (numDigits(p) == 0 || numLetters(p) == 0 || numSymbols(p) == 0)) {
         String output = "medium";
         return output;
+        //return "medium";
     }
 
     else {
         String output = "weak";
         return output;
+        //return "weak";
     }
 }
