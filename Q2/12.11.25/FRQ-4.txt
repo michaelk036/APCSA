@@ -24,3 +24,19 @@ public static String passwordStrength(String p) {
         return output;
     }
 }
+
+notes
+
+- you can return a string directly
+    - for instance `return "Strong";` is valid you don't need to put it into a variable
+
+Type 1 FRQs will always have:
+- loops (for/while)
+- if else
+- function call
+- parameter passing
+- function signature -> as written in the directions
+    - for instance `public static String passwordStrength(String p)` should be exactly as it is in the direction
+
+- If you include all of these things you ensure that you get maxium points
+    - ie. if you can use a for loop use it
