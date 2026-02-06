@@ -8,9 +8,9 @@ public class Shopping {
 
     public static void main(String[] args) {
         Shopping kayak = new Shopping (20);
-        kayak.addShoppingoption("JMart", 225.95, 18); 
-        kayak.addShoppingoption("Jest Buy", 189.00, 24); 
-        kayak.addShoppingoption("Tarjet", 220.95, 19);
+        kayak.addShoppingOption("JMart", 225.95, 18); 
+        kayak.addShoppingOption("Jest Buy", 189.00, 24); 
+        kayak.addShoppingOption("Tarjet", 220.95, 19);
         System.out. println(kayak);
         System.out.println(kayak.streetPrice());
     }

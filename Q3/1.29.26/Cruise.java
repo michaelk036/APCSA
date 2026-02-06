@@ -2,6 +2,7 @@ public class Cruise {
     private int price;
     private int signups;
     private int currentPrice;
+    int people = 0;
     public static void main(String[] args) {
         Cruise cr = new Cruise(78, 4000);
         cr.setPrice(5000);
@@ -19,8 +20,9 @@ public class Cruise {
         price = newPrice;
     }
     public void checkResponse(String phrase) {
-        //somehow check if the string contains "cruise"
-        //if it does people++
+        if (phrase.indexOf("cruise") != -1) {
+            people++;
+        }
     }
 
     public double calculateRevenue() {

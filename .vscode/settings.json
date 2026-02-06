@@ -1,5 +1,6 @@
 {
     "java.project.sourcePaths": [
+        "Q3/1.23.26",
         "Q2/12.09.25",
         "Q2/12.03.25",
         "Q2/12.01.25",
@@ -11,7 +12,9 @@
         "Q2/11.03.25",
         "Q2/01.05.26",
         "Q1/9.10.25",
-        "Q3/1.23.26"
+        ""
     ],
-    "java.debug.settings.onBuildFailureProceed": true
+    "java.debug.settings.onBuildFailureProceed": true,
+    "markdown.extension.completion.enabled": false,
+    "markdown.extension.tableFormatter.enabled": false
 }
