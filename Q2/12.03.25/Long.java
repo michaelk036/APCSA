@@ -3,6 +3,7 @@ Q4 — Find the Longest Word
 Given an ArrayList of Strings, find and print the longest word.
 */
 import java.util.ArrayList;
+import java.util.function.Consumer;
 
 class Long {
     public static void main(String[] args) {
