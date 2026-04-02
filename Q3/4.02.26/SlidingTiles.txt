@@ -1,0 +1,33 @@
+a
+public static boolean isPacked (String[][] tiles) { 
+    boolean packed = false;
+
+    for (int row = 0; row < tiles.length; row++) {
+        for (int col = 0; col < tiles[0].length; col++) {
+            if (tiles[row][col] != null && tiles[row][col-1] != null && tiles[row][col+1] != null && tiles[row-1][col] != null) {
+                packed = true;
+            }
+            else if ((row == 0 || col == 0) || (row == tiles.length || row == tiles[0].length)) {
+                if (tiles[row][col] != null && tiles[row][col-1] != null && tiles[row][col+1] != null && tiles[row-1][col] != null) {
+                    packed = true;
+                }
+            }
+            else {
+                packed = false;
+            }
+        }
+    }
+    return packed;
+}
+
+b
+private static void moveTile(String[][] tiles, int row, int col) {
+    for (int rows = 0; rows < tiles.length; rows++) {
+        for (int columns = 0; columns < tiles[0].length; columns++) {
+            if (tiles[rows-1][columns-1] == null &&  rows != 0 && columns != 0) {
+                row = rows - 1;
+                col = columns - 1; 
+            }
+        }
+    }
+}

@@ -1,0 +1,33 @@
+a
+
+public ArrayList<Integer> getBlankPositions() {
+    ArrayList<String> list = new ArrayList<>();
+    ArrayList<Integer> blanks = new ArrayList<>();
+
+    list.equals(sentence.split(" "));
+ 
+    for (int i = 0; i < list.size(); i++) {
+        if (list.get(i).equals(" ")) {
+            blanks.add(i);
+        }
+    }
+    return blanks;
+}
+
+b
+
+public String[] getWords() {
+    ArrayList<Integer> blanks = getBlankPositions();
+    String array[] = new String[countWords()];
+
+    int start = 0;
+
+    for (int i = 0; i < blanks.size(); i++) {
+        int end = blanks.get(i);
+        array[i] = sentence.substring(start, end);
+        start = end + 1;
+    }
+
+    array[array.length] = sentence.substring(start);
+    return array;
+}

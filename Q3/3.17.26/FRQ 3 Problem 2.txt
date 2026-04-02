@@ -1,0 +1,29 @@
+a
+
+public static ArrayList<Integer> findRPeaks(double[] v) {
+    ArrayList<Integer> peaks = new ArrayList<>();
+
+    for (i >= v[DELTA]; i < v[v.length-1-DELTA]; i++) {
+        if (isRPeak(v, DELTA)) {
+            peaks.add(DELTA);
+        } 
+        else {
+            DELTA++;
+        }
+    }
+    return peaks;
+}
+
+b
+
+public static int heartRate(ArrayList<Integer> rPeakPositions) {
+    int first = rPeakPositions.get(0);
+    int last = rPeakPositions.get(rPeakPositons.size() - 1);
+
+    double a = (double)(last - first)/(rPeakPositons.size() - 1);
+
+    double bpm = 60.0*SAMPLING_RATE/a;
+
+    return (int)(bpm);
+}
+
